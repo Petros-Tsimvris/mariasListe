@@ -10,8 +10,8 @@ export default function Notice() {
     saveToLocalStorage("My Notice", notice);
   });
   return (
-    <div className="notizen">
-      <h2 className="title">Marias's Notizen</h2>
+    <div className="notizenWrap">
+      <h2 className="notizentitle">Marias's Notizen</h2>
       <form
         className="form"
         autoComplete="off"
@@ -23,6 +23,7 @@ export default function Notice() {
         }}
       >
         <input
+          placeholder="Schreib deine Notizen"
           required
           type="text"
           id="notice"
@@ -31,13 +32,13 @@ export default function Notice() {
             setNoticeValue(event.target.value);
           }}
         />
-        <button className="addButton">Add</button>
+        <button className="addButton">Hinzufügen</button>
       </form>
-      <ul>
+      <ul className="noticeUL">
         {notice.map((noti) => {
           return (
             <>
-              <li className="todoLi" key={noti.id}>
+              <li className="noticeLi" key={noti.id}>
                 {noti.name}
                 <button
                   key={noti.id}
