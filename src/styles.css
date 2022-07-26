@@ -1,0 +1,52 @@
+.App {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: lightblue;
+  width: 100%;
+  min-height: 100vh;
+}
+.title {
+  padding: 5px;
+  color: white;
+  border-top: 6px solid white;
+  border-right: 6px solid white;
+  border-left: 6px solid white;
+  border-bottom: 12px solid rgba(0, 0, 0, 0.315);
+}
+
+.addButton {
+  margin-left: 10px;
+  color: white;
+  background-color: green;
+  border-radius: 10px;
+  border: 2px solid white;
+  padding: 3px 5px;
+}
+.deleteButton {
+  background-color: red;
+  color: white;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: 2px solid white;
+  padding: 3px 5px;
+}
+.todoUl {
+  padding: 0;
+  list-style: none;
+}
+.todoLi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 4px solid skyblue;
+  border-right: 4px solid skyblue;
+  border-left: 4px solid skyblue;
+  border-bottom: 9px solid rgba(0, 0, 0, 0.315);
+  color: darkslategray;
+  padding: 10px;
+  margin: 10px;
+  background-color: skyblue;
+}
