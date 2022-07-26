@@ -13,7 +13,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1 className="title">Einkaufsliste</h1>
+      <h1 className="title">Maria's Einkaufsliste</h1>
       <form
         className="form"
         autoComplete="off"
