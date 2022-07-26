@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
 import { saveToLocalStorage, loadFromLocalStorage } from "./LocalStorage";
 import "./styles.css";
+
 console.clear();
 export default function App() {
   const [inputValue, setInputValue] = useState("");
