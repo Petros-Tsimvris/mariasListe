@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
 import { saveToLocalStorage, loadFromLocalStorage } from "./LocalStorage";
 import "./styles.css";
+import Notice from "./notice";
 
 console.clear();
 export default function App() {
@@ -18,7 +19,7 @@ export default function App() {
       <form
         className="form"
         autoComplete="off"
-        htmlFor="333333todo"
+        htmlFor="todo"
         onSubmit={(event) => {
           event.preventDefault();
           setTodos([...todos, { name: inputValue, id: nanoid() }]);
@@ -58,6 +59,7 @@ export default function App() {
           );
         })}
       </ul>
+      <Notice />
     </div>
   );
 }
