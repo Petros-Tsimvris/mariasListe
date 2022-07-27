@@ -48,7 +48,7 @@ export default function Notice() {
                     setNotice(notice.filter((Item) => Item.id !== noti.id));
                   }}
                 >
-                  Erledigt
+                  X
                 </button>
               </li>
             </>
