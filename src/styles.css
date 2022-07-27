@@ -97,7 +97,9 @@ form {
 .noticeLi {
   text-align: center;
   height: auto;
+  min-height: 30px;
   width: auto;
+  max-width: 75%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
