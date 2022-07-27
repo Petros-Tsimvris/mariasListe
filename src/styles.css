@@ -96,12 +96,12 @@ form {
   padding: 0;
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
 }
 .noticeLi {
+  word-wrap: break-word;
   text-align: center;
   height: auto;
   min-height: 30px;
