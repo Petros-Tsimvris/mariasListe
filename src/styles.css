@@ -89,6 +89,7 @@ form {
   margin: 10px !important;
   background-color: #6272a4;
 }
+
 .todoLi::before {
   content: "💙";
 }
@@ -101,6 +102,12 @@ form {
   align-items: stretch;
 }
 .noticeLi {
+  /* hyphens */
+  -moz-hyphens: auto;
+  -o-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
   word-wrap: break-word;
   text-align: center;
   height: auto;
@@ -115,7 +122,7 @@ form {
   padding: 30px !important;
   margin: 10px !important;
   background-color: ghostwhite;
-  border-left: 25px dotted black;
+  border-left: 15px dotted black;
   position: relative;
   z-index: 1;
 }
