@@ -100,6 +100,12 @@ form {
   align-items: stretch;
 }
 .noticeLi {
+  -moz-hyphens: auto;
+  -o-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  white-space: wrap;
   text-align: center;
   height: auto;
   min-height: 30px;
