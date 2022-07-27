@@ -9,11 +9,11 @@ export default function App() {
   return (
     <div className="App">
       <nav className="NavBar">
-        <LinkButton to="/einkauf">Einkaufsliste</LinkButton>
+        <LinkButton to="/">Einkaufsliste</LinkButton>
         <LinkButton to="/notizen">Notizen</LinkButton>
       </nav>
       <Routes>
-        <Route path="/einkauf" element={<Todo />} />
+        <Route path="/" element={<Todo />} />
         <Route path="/notizen" element={<Notice />} />
       </Routes>
     </div>
